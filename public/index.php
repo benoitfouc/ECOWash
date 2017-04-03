@@ -18,7 +18,17 @@
 </head>
 <body>
     <div class="row">
-        gergfgegegege
+        <div class="col-md-6 offset-3">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
