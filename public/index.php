@@ -17,8 +17,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+    <?php include"../include/navBar.php" ?>
     <div class="row">
-        <div class="col-md-6 offset-3">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6 ">
             <div class="form-group">
                 <label for="usr">Name:</label>
                 <input type="text" class="form-control" id="usr">
@@ -27,6 +31,9 @@
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd">
             </div>
+        </div>
+        <div class="col-md-3">
+
         </div>
 
     </div>
