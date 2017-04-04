@@ -4,10 +4,7 @@
  * User: Alexandre
  * Date: 03/04/2017
  * Time: 15:07
- * BDD : u585215212_weco
- * User : u585215212_weco
- * Host : mysql.hostinger.fr
- */
+*/
 ?>
 <html>
 <head>
