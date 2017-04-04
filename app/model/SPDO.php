@@ -18,7 +18,7 @@ class SPDO
 
     const DEFAULT_SQL_HOST = 'mysql.hostinger.fr';
 
-    const DEFAULT_SQL_PASS = '';
+    const DEFAULT_SQL_PASS = 'Serveur-007';
 
     const DEFAULT_SQL_DTB = 'u357762808_weco';
 
