@@ -22,7 +22,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li id="Connexion" class="active"><a href="index.php">Connexion</a></li>
+                <li id="Connexion" class="active"><a href="connection.php">Connexion</a></li>
                 <li id="Machine"><a href="maMachine.php">Ma machine</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
