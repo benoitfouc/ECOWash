@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Alexandre
- * Date: 03/04/2017
- * Time: 15:07
-*/
-?>
 <html>
 <head>
     <!-- Latest compiled and minified CSS -->
