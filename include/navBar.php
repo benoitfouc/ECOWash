@@ -16,24 +16,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">ECOWash</a>
+            <a class="navbar-brand" style="padding-top: 5px;" href="index.php"><img src="../images/logo.png" width="90"></img></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li id="Connexion" class="active"><a href="connection.php">Connexion</a></li>
-                <li id="Machine"><a href="maMachine.php">Ma machine</a></li>
+                <li id="Compte"><a href="#">Mon compte</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine(s) <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li id="Machine"><a href="maMachine.php">Configuration</a></li>
+                        <li><a href="#">Alertes</a></li>
+                        <li><a href="#">Statistiques</a></li>
                     </ul>
                 </li>
             </ul>
