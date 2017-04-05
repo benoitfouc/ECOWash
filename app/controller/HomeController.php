@@ -10,4 +10,13 @@ class HomeController extends Controller
         $this->template = 'default';
         $this->render('home/index');
     }
+    public function faq(){
+        $this->template = 'default';
+        $this->render('home/faq');
+    }
+    public function resume(){
+        $this->template = 'default';
+        $this->render('home/resume');
+    }
+
 }

@@ -14,13 +14,13 @@ class SPDO
 
     private static $instance = null;
 
-    const DEFAULT_SQL_USER = 'u357762808_weco';
+    const DEFAULT_SQL_USER = 'root';
 
-    const DEFAULT_SQL_HOST = 'mysql.hostinger.fr';
+    const DEFAULT_SQL_HOST = 'localhost';
 
-    const DEFAULT_SQL_PASS = 'Serveur-007';
+    const DEFAULT_SQL_PASS = '';
 
-    const DEFAULT_SQL_DTB = 'u357762808_weco';
+    const DEFAULT_SQL_DTB = 'ecowash';
 
     private function __construct()
     {

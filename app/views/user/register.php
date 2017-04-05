@@ -8,7 +8,6 @@
             <?= $form->input('prenom', 'Prenom', ['type' => 'text']); ?>
             <?= $form->input('password', 'Mot de passe', ['type' => 'password']); ?>
             <?= $form->input('password_verif', 'Répeter le mot de passe', ['type' => 'password']); ?>
-            <?= $form->select('langue', 'Langue parlée', $langues); ?>
             <?= $form->submit('S\'enregistrer !'); ?>
         </form>
     </div>

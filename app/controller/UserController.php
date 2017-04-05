@@ -39,16 +39,9 @@ class UserController extends Controller
         $this->template = 'default';
         $userrepo = new UserRepository();;
         $error = ' ';
-        
-        $langues = [];
-        foreach ($this->repository->findAll('langues') as $k => $langue) {
-            $langues[$k] = $langue->name;
-        }
-        
         if($userrepo->islogged()){
             $this->denied();
         }
-
         if(!empty($_POST)) {
             $email = $_POST['email'];
             $nom = $_POST['nom'];

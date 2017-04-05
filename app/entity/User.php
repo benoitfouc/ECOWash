@@ -12,17 +12,16 @@ class User
     
     private $prenom;
 
-    private $adresse;
+    private $email;
 
     private $password;
 
-    private $email;
+
     
     public function __construct()
     {
         
     }
-
 
     /**
      * @return mixed
@@ -75,31 +74,6 @@ class User
     /**
      * @return mixed
      */
-    public function getAdresse()
-    {
-        $stmt = SPDO::getInstance()->query('SELECT * FROM adresse WHERE id = ' .$this->adresse );
-        $res = $stmt->fetch(\PDO::FETCH_OBJ);
-        if($res) {
-            $adresse = new Adresse();
-            $adresse->setVille($res->ville);
-            $adresse->setCp($res->cp);
-            return $adresse;
-        }
-
-        return false;
-    }
-
-    /**
-     * @param mixed $adresse
-     */
-    public function setAdresse($adresse)
-    {
-        $this->adresse = $adresse;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getEmail()
     {
         return $this->email;
@@ -128,5 +102,6 @@ class User
     {
         $this->password = $password;
     }
+
     
 }

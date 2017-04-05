@@ -28,18 +28,15 @@
                     <?php if(\App\Model\UserRepository::logged()): ?>
                     <li><a href="<?= PATH ?>/user/profil">Profil</a></li>
                     <?php endif ?>
-                    <?php if(\App\Model\UserRepository::loggedAdmin()): ?>
-                        <li><a href="<?= PATH ?>/admin/index">Admin</a></li>
-                    <?php endif ?>
                     <li><a href="<?= PATH ?>/annonces/index">Annonces</a></li>
                     <?php if(\App\Model\UserRepository::logged()): ?>
                         <li><a href="<?= PATH ?>/annonces/create">Créer une annonce</a></li>
                     <?php endif ?>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En savoir + <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
+                            <li><a href="<?=PATH?>/home/resume">ECO WASH</a></li>
+                            <li><a href="<?=PATH?>/home/faq">F.A.Q</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li role="separator" class="divider"></li>
                             <li class="dropdown-header">Nav header</li>
@@ -59,7 +56,6 @@
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
-    <h1 class="center">Template défaut</h1>
     <?php echo $content; ?>
 </div>
 </body>
