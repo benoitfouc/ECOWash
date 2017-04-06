@@ -39,23 +39,23 @@
     <div class="col-md-3"></div>
 </div>
 <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-        <form method="post">
-            <?= $form->select('bac', 'Quelque bac souhaiter vous lancer', ['required'=>'true','onchange'=>'action','id'=>'bac'],$options=['1','2','3']); ?>
-
-            <div id="premier" style="display:none ;">
-                <?= $form->select?>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form method="post">
+                    <?= $form->select('bac', 'Quelque bac souhaiter vous lancer', ['id'=>'bac'],$options=['1','2','3']); ?>
+                    <div id="premier" style="display:none ;"><p>Vous avez choisi le PREMIER bac</p></div>
+                    <div id="second" style="display:none ;"><p>Vous avez choisi le SECOND bac</p></div>
+                    <div id="troisieme" style="display:none ;"><p>Vous avez choisi le TROISIEME bac</p></div>
+                    <div id="info"style="display:none ;">
+                    <?= $form->input('date','Programmer votre Date',['required'=>'false','type'=>'date']);?>
+                    <?= $form->input('heure','Choissisez votre heure',['required'=>'true','type'=>'number']);?>
+                    <?= $form->input('minutes','Choissisez vos minutes',['required'=>'true','type'=>'number']);?>
+                    <?= $form->select('prog','choissisez votre programme',['required'=>'false','id'=>'programme'],$listeProg)?>
+                    <?= $form->select('temperature','Temperatures',['required'=>'false','id'=>'temperatures'],$listeTemp)?>
+                    <?= $form->submit('Lancer la machine !','submit'); ?>
+                    </div>
+                </form>
             </div>
-            <div id="second" style="display:none ;">
-                SECOND
+            <div class="col-md-3"></div>
             </div>
-            <div id="troisieme" style="display:none ;">
-                TROISEME
-            </div>
-            <?= $form->submit('Lancer la machine !','submit'); ?>
-        </form>
-    </div>
-    <div class="col-md-3"></div>
-</div>
 <?php var_dump($infomachine,$infomachine['premier'])?>

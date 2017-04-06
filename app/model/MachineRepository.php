@@ -16,4 +16,44 @@ class MachineRepository
         $infoMachine = $req->fetch();
         return $infoMachine;
     }
+    public function insertLesive($date,$heure,$minute,$idmachine,$idprogramme,$idtemperatures){
+        $req=SPDO::getInstance()->prepare('INSERT INTO lessive(datedebut,heure,minutes,idmachine,idprogramme,idtemperatures)VALUES(:date,:heure,:minute,:idmachine,:idprogramme,:idtemperatures)');
+        $req->bindValue(':date',$date);
+        $req->bindValue(':heure',$heure);
+        $req->bindValue(':minute',$minute);
+        $req->bindValue(':idmachine',$idmachine);
+        $req->bindValue(':idprogramme',$idprogramme);
+        $req->bindValue(':idtemperatures',$idtemperatures);
+        $req->execute();
+    }
+    public function getIdMachineUser($iduser){
+        $req=SPDO::getInstance()->query('SELECT * FROM machine WHERE idpersonne ='.$iduser.'');
+        $datas = $req->fetchAll();
+        foreach ($datas as $value) {
+            $idmachine = $value['id'];
+
+        }
+        return $idmachine;
+    }
+    public function getAllProgramme()
+    {
+        $array = array();
+        $req = SPDO::getInstance()->query('SELECT * FROM programme ORDER BY id ASC');
+        $datas = $req->fetchAll();
+        foreach ($datas as $value) {
+            $string = $value['id'] . ' - ' . $value['libelle'];
+            array_push($array, $string);
+        }
+        return $array;
+    }
+    public function getAllTemperature() {
+        $array = array();
+        $req = SPDO::getInstance()->query('SELECT * FROM temperatures ORDER BY id ASC');
+        $datas = $req->fetchAll();
+        foreach ($datas as $value){
+            $string = $value['id'].' - '.$value['libelle'];
+            array_push($array,$string);
+        }
+        return $array;
+    }
 }
