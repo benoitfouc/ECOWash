@@ -1,1 +1,0 @@
-<script src="<?php $_SERVER['ROOT']?>/public/js/jsPourChange.js"></script>

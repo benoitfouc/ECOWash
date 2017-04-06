@@ -7,9 +7,10 @@
     <title>AppMvcMouli</title>
     <link href="<?= PATH ?>/public/css/bootstrap.css" rel="stylesheet">
     <link href="<?= PATH ?>/public/css/styles.css" rel="stylesheet">
-    <script src="<?= PATH ?>/public/js/jquery-2.2.4.js"></script>
-    <script src="<?= PATH ?>/public/js/bootstrap.js"></script>
-    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="<?=PATH?>/public/js/jsPourChange.js"></script>
+</head>
 <body>
 <div class="container">
     <nav class="navbar navbar-default" style="margin-top: 20px">
