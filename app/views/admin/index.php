@@ -1,1 +1,0 @@
-<h2 class="center">Page Admin</h2>

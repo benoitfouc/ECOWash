@@ -28,12 +28,11 @@
                     <?php if(\App\Model\UserRepository::logged()): ?>
                     <li><a href="<?= PATH ?>/user/profil">Profil</a></li>
                     <?php endif ?>
-                    <li><a href="<?= PATH ?>/annonces/index">Annonces</a></li>
                     <?php if(\App\Model\UserRepository::logged()): ?>
-                        <li><a href="<?= PATH ?>/annonces/create">Créer une annonce</a></li>
+                        <li><a href="<?= PATH ?>/machine/index">Votre Machine</a></li>
                     <?php endif ?>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En savoir + <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Eco Wash <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?=PATH?>/home/resume">ECO WASH</a></li>
                             <li><a href="<?=PATH?>/home/faq">F.A.Q</a></li>
