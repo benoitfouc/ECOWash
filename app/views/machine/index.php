@@ -58,5 +58,4 @@
     </div>
     <div class="col-md-3"></div>
 </div>
-<script src="../../../../public/js/jsPourChange.js"></script>
 <?php var_dump($infomachine,$infomachine['premier'])?>
