@@ -11,10 +11,16 @@ namespace App\Model;
 class MachineRepository
 {
     public function getMachineUser($id){
-        $req =SPDO::getInstance()->prepare('SELECT * FROM machine WHERE idpersonne ='.$id.'');
+        $req =SPDO::getInstance()->prepare('SELECT * FROM machine WHERE idpersonne ='.$id.'.');
         $req->execute();
         $infoMachine = $req->fetch();
         return $infoMachine;
+    }
+    public function getReservoirStatut($id){
+        $req =SPDO::getInstance()->prepare('SELECT * FROM `machine` INNER JOIN reservoir ON machine.idreservoir = reservoir.id WHERE idpersonne ='.$id.'.');
+        $req->execute();
+        $infoReservoir = $req->fetch();
+        return $infoReservoir;
     }
     public function insertLesive($date,$heure,$minute,$idmachine,$idprogramme,$idtemperatures){
         $req=SPDO::getInstance()->prepare('INSERT INTO lessive(datedebut,heure,minutes,idmachine,idprogramme,idtemperatures)VALUES(:date,:heure,:minute,:idmachine,:idprogramme,:idtemperatures)');
@@ -27,7 +33,7 @@ class MachineRepository
         $req->execute();
     }
     public function getIdMachineUser($iduser){
-        $req=SPDO::getInstance()->query('SELECT * FROM machine WHERE idpersonne ='.$iduser.'');
+        $req=SPDO::getInstance()->query('SELECT * FROM machine WHERE idpersonne ='.$iduser.'.');
         $datas = $req->fetchAll();
         foreach ($datas as $value) {
             $idmachine = $value['id'];

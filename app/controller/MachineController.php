@@ -22,6 +22,7 @@ class MachineController extends Controller
         $listeProg=$machinerepo->getAllProgramme();
         $listeTemp = $machinerepo->getAllTemperature();
         $idmachine=$machinerepo->getIdMachineUser($userrepo->getUserId());
+        $inforeservoir = $machinerepo->getReservoirStatut($userrepo->getUserId());
         $error="";
         $this->template = 'default';
         $form = new TemplateForm($_POST);
@@ -34,7 +35,7 @@ class MachineController extends Controller
             if($_POST['date']){
                 if($_POST['heure']>=23){
                     if($_POST['minutes']>=59){
-                        
+
                     }else {
                         $error="Veuillez remplir une heure valide entre 0 et 59";
                     }
@@ -52,6 +53,6 @@ class MachineController extends Controller
         }else{
             $error="Veuillez remplir le formulaire";
         }
-        $this->render('machine/index', compact('infomachine','form','listeProg','listeTemp'));
+        $this->render('machine/index', compact('infomachine','form','listeProg','listeTemp','inforeservoir'));
     }
 }

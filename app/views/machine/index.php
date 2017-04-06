@@ -1,4 +1,35 @@
 <div class="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <p>Votre niveau de lesive</p>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: <?=$inforeservoir['lessive']?>%">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <p>Votre niveau d'adoucissant</p>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width:<?=$inforeservoir['adoucissant']?>%">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+
+<div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
         <h2>Votre machine</h2>
@@ -58,4 +89,6 @@
             </div>
             <div class="col-md-3"></div>
             </div>
-<?php var_dump($infomachine,$infomachine['premier'])?>
+<?php
+var_dump($inforeservoir);
+//var_dump($infomachine,$infomachine['premier'])?>

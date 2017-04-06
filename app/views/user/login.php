@@ -3,9 +3,9 @@
 <div class="row">
     <div class="col-sm-4 col-sm-offset-4">
         <form method="post">
-            <?= $form->input('email', 'Email', ['type' => 'email']); ?>
-            <?= $form->input('password', 'Mot de passe', ['type' => 'password']); ?>
-            <?= $form->submit('Se connecter !'); ?>
+            <?= $form->input('email', 'Email', ['required'=>'true','type' => 'email']); ?>
+            <?= $form->input('password', 'Mot de passe', ['required'=>'true','type' => 'password']); ?>
+            <?= $form->submit('Se connecter !','submit'); ?>
         </form>
     </div>
 </div>

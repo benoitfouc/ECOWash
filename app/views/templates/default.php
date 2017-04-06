@@ -22,7 +22,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?= PATH ?>/home/index">PHPappMvc</a>
+
+                <a class="navbar-brand" href="<?= PATH ?>/home/index"><img class="img-responsive" style="height: 25px;width: 50px;" src="<?=PATH?>/public/image/logo.png"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
