@@ -73,7 +73,7 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <form method="post">
-                    <?= $form->select('bac', 'Quelque bac souhaiter vous lancer', ['id'=>'bac'],$options=['1','2','3']); ?>
+                    <?= $form->select('bac', 'Quel bac souhaitez vous lancer', ['id'=>'bac'],$options=['1','2','3']); ?>
                     <div id="premier" style="display:none ;"><p>Vous avez choisi le PREMIER bac</p></div>
                     <div id="second" style="display:none ;"><p>Vous avez choisi le SECOND bac</p></div>
                     <div id="troisieme" style="display:none ;"><p>Vous avez choisi le TROISIEME bac</p></div>
